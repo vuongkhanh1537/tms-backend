@@ -16,6 +16,8 @@ FROM scratch
 
 WORKDIR /app
 
+COPY ./config /app/config
+
 COPY --from=builder /app/server .
 
 EXPOSE 8080

@@ -15,6 +15,7 @@
 .DS_Store
 
 # dotenv / secrets
+config/prod.yaml
 .env
 .env.*.local
 
