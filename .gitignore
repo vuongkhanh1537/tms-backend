@@ -1,0 +1,25 @@
+# Binaries
+/bin/
+/build/
+/dist/
+
+# Go modules
+/vendor/
+/go.sum
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# dotenv / secrets
+.env
+.env.*.local
+
+# DB
+*.db
+
+# Swagger generated
+docs/swagger/*
