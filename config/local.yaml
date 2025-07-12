@@ -16,3 +16,11 @@ redis:
 jwt:
   secret: "localsecret"
   expire_minutes: 60
+
+log:
+  logLevel: debug
+  fileLogName: "./storages/logs/dev.log"
+  maxSize:    500
+  maxBackups: 3
+  maxAge:     28
+  compress:   true

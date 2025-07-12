@@ -8,6 +8,7 @@ import (
 
 func Run() {
 	LoadConfig()
+	InitLogger()
 
 	r := InitRouter()
 

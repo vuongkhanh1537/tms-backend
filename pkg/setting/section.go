@@ -5,6 +5,7 @@ type Config struct {
 	Database DatabaseConfig `mapstructure:"database"`
 	Redis    RedisConfig    `mapstructure:"redis"`
 	JWT      JWTConfig      `mapstructure:"jwt"`
+	Logger   LogConfig      `mapstructure:"logger"`
 }
 
 type ServerConfig struct {
@@ -28,4 +29,13 @@ type RedisConfig struct {
 type JWTConfig struct {
 	Secret         string `mapstructure:"secret"`
 	ExpiresMinutes int    `mapstructure:"expires_minutes"`
+}
+
+type LogConfig struct {
+	LogLevel    string `mapstructure:"logLevel"`
+	FileLogName string `mapstructure:"fileLogName"`
+	MaxSize     int    `mapstructure:"maxSize"`
+	MaxBackups  int    `mapstructure:"maxBackups"`
+	MaxAge      int    `mapstructure:"maxAge"`
+	Compress    bool   `mapstructure:"compress"`
 }
