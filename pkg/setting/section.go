@@ -14,7 +14,7 @@ type ServerConfig struct {
 
 type DatabaseConfig struct {
 	Host     string `mapstructure:"host"`
-	Port     string `mapstructure:"port"`
+	Port     int `mapstructure:"port"`
 	User     string `mapstructure:"user"`
 	Password string `mapstructure:"password"`
 	DBname   string `mapstructure:"dbname"`

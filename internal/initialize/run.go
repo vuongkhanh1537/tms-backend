@@ -9,6 +9,7 @@ import (
 func Run() {
 	LoadConfig()
 	InitLogger()
+	InitPostgres()
 
 	r := InitRouter()
 
